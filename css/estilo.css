@@ -1,0 +1,686 @@
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #B0d7f1;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+.cabecalho{
+    background-color: #70b2dc;
+    height: 200px;
+    padding: 25px;
+    display: flex;
+}
+
+.header-imagem{
+    width: 20%;
+}
+
+#imagem_header{
+    height: 190px;
+    width: 180px;
+    float: left;
+    margin: 5px auto;
+    padding-left: 5em;
+}
+
+.header-conteudo{
+    width: 80%;
+}
+
+.titulo-cabecalho{
+    text-align: center;
+    margin: 25px auto;
+    padding: 5px;
+    font-size: 4em;
+}
+
+#subtitulo-header{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 2.2em;
+}
+
+.titulo-principal{
+    clear: both;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+main{
+    float: right;
+    margin: 30px auto;
+    padding: 0 20px;
+    background-color: #Cce2f3;
+    width: 800px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.6em;
+    margin-right: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.caixa-imagem{
+    text-align: center;
+}
+
+.imagem-conteudo{
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.legenda{
+    font-size: 1em;
+    text-align: center;
+    color: #555555;
+    padding-bottom: 5px;
+}
+
+aside{
+    background-color: #Cce2f3;
+    width: 230px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-left: 7em;
+    margin-top: 30px;
+}
+
+.caixa-titulo-nav{
+    background-color: #70b2dc;
+    height: 8em;
+    border: 2px transparent;
+    border-radius: 7px;
+}
+
+nav h3{
+    padding-top: 6px;
+    text-align: center;
+    font-size: 23px;
+    margin: 0;
+}
+
+nav a{
+    color: #069ad4;
+    font-size: 17px;
+}
+
+nav a:hover{
+    color: #0484b3;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+.imagem-aside{
+    width: 12.5em;
+    height: 12em;
+}
+
+footer{
+    clear: both;
+    padding-top: 10px;
+    width: 100%;
+    background-color:  #70b2dc;
+    padding-bottom: 0.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.caixa-lista li{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.lista-footer{
+    list-style: none;
+    text-align: center;
+}
+
+.lista-footer li{
+    margin: 0 1.2em;
+}
+
+.caixa-squirtle{
+    margin: 0 auto;
+}
+
+.item-lista{
+    margin-left: 20px;
+}
+
+.imagem-lista{
+    width: 50px;
+    height: 50px;
+}
+
+.imagem-lista:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.footer-imagem{
+    margin-top: 20px;
+    width: 130px;
+}
+
+/*CSS da página de linha evolutiva*/
+
+.container-imagens, .container-evolucao-especial{
+    display: inline-flex;
+    align-items: baseline;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.evolucao-imagem{
+    width: 7em;
+    height: 7em;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: rgb(163, 203, 230);
+    border-radius: 20px;
+    transform: scale(1.2);
+}
+
+.caixa-evolucao, .caixa-evolucao-especial{
+    width: 10em;
+}
+
+.caixa-evolucao-especial{
+    margin-right: 5em;
+}
+
+.flecha-imagem{
+    width: 4em;
+    height: 4em;
+    padding-bottom: 2em;
+    margin: 0 5px;
+}
+
+/*CSS da página de Inscrição*/
+
+form > p{
+    text-align: center;   
+}
+
+form label, form input{
+    display: inline-block;
+    margin: 8px 0 8px 30px;
+}
+
+form label{
+    font-size: 15px;
+}
+
+form input, .caixa-fieldset textarea{
+    border-radius: 5px;
+    border-color: #555555;
+    border-style: double;
+}
+
+.input-dadospessoais{
+    display: block;
+    width: 20em;
+    padding: 10px;
+}
+
+fieldset{
+    border-color: #000000;
+    border-radius: 5px;
+    width: 90%;
+    margin: 10px 0;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.container{
+    display: inline-flex;
+}
+
+.caixa-fieldset{
+    width: 50%;
+    align-items: flex-start;
+}
+
+.caixa-fieldset p {
+    font-size: 15px;
+    margin: 20px 0 3px 30px;
+}
+
+#destaque-radio{
+    font-size: 16px;
+}
+
+.labelradio, .labelinput{
+    margin: 0 5px;
+}
+
+.labelinput{
+    margin-left: 30px;
+}
+
+.labelradio{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.caixa-img-fieldset{
+   width: 50%;
+   align-items: flex-end;
+   margin: auto 0;
+}
+
+.caixa-img-fieldset p{
+    text-align: center;
+    color: #555555;
+}
+
+.imagem-formulario{
+    width: 20em;
+    height: 15em;
+    border-radius: 10px;
+    margin: 50px 0 0 20px   
+}
+
+.mensagem_txtarea{
+    margin: 5px 0 5px 30px;
+}
+
+#labeldescoberta{
+    display: block;
+}
+
+#descoberta{
+    margin: 5px 0 5px 30px;
+    padding: 3px;
+}
+
+#areatxt{
+    margin: 5px 0 5px 30px;
+    resize: none;
+    width: 20em;
+    padding: 10px;
+}
+
+#descoberta, #areatxt{
+    border: double 2px #555555;
+    border-radius: 5px;
+}
+
+.rotulo-participacao{
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+button{
+    margin: 15px 5px;
+    background-color: #70b2dc;
+    font-size: 18px;
+    width: 10em;
+    border-radius: 10px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    background-color: #0484b3;
+    cursor: pointer;
+}
+
+/*CSS da página de cartas (TCG)*/
+main ol{
+    margin: 2px 0;
+}
+
+main ol li{
+    margin-top: 10px;
+}
+
+.caixa-carta{
+    display: inline-flex;
+    background-color: rgb(163, 203, 230);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 25px auto;
+    padding: 12px;
+}
+
+.carta-conteudo{
+    width: 135px;
+    height: 16em;
+    margin: 10px;
+}
+
+.caixa-carta p {
+    color: #555555;
+}
+
+
+/*CSS da página de descrições*/
+.caixa-tabela{
+    background-color: white;
+    margin: 10px 5em;
+    border-radius: 10px;
+    padding: 8px; 
+    border: 2px solid #7daacf; 
+}
+
+.geracao{
+    background-color: #a3d4ff;
+    width: 150px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 8px;
+    min-height: 30px;
+    border-color: #4aabff;
+}
+
+.entrada_pokedex{
+    text-align: center;
+    background-color: #a3d4ff;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    width: 200px;
+    border: 2px solid;
+    border-color: #4aabff;
+    font-weight: normal;
+}
+
+table{
+    width: 100%;
+    border: 3px solid #a3d4ff;
+    background-color: #dde6f0;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+thead tr th{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #7daacf;
+}
+
+table tbody td{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #01627a;
+}
+
+table tbody td:first-child{
+    text-align: center;
+    border-radius: 12px;
+    font-size: 15px;
+    border: none;
+    padding: 2px;
+    line-height: 12pt;
+    width: 10%;
+}
+
+table tbody td:nth-child(2){
+    padding: 5px;
+    font-size: 14.5px;
+}
+
+.sem_entrada{
+    background-color: #dde6f0;
+    font-weight: bold;
+}
+
+@media screen and (max-width:400px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho{
+        padding: 3px;
+    }
+
+    #imagem_header{
+        padding-left: 0;
+        padding-top: 20px;
+        width: 14.5em;
+        height: 14.5em;
+    }
+
+    .header-conteudo{
+        height: 8em;
+        margin-left: 5em;
+        padding: 0 2.5em;
+        padding-bottom: 1em;
+    }
+
+    .titulo-cabecalho{
+        font-size: 2.4em;
+        padding: 3px;
+    }
+
+    #subtitulo-header{
+        font-size: 1.3em;
+    }
+
+    .titulo-principal{
+        font-size: 1.5em;
+    }
+
+    main{
+        width: 25em;
+        font-size: 1.2em;
+        margin: 1em auto;
+    }
+
+    main p{
+        font-size: 16px;
+    }
+
+    .legenda{
+        font-size: 12px;
+    }
+
+    .imagem-conteudo{
+        width: 18em;
+        height: 18em;
+        margin: 0 5px;
+    }
+
+    aside{
+        width: 35em;
+        height: auto;
+        margin: 30px 4em;
+    }
+
+    .caixa-titulo-nav{
+        height: 12em;
+        margin-bottom: 2em;
+    }
+
+    nav h3{
+        font-size: 2em;
+        padding: 25px;
+    }
+
+    nav li{
+        padding-top: 6px;
+        padding-right: 10px;
+    }
+
+    nav a{
+        font-size: 1.8em;
+    }
+
+    .imagem-aside{
+        width: 10em;
+        height: 10em;
+    }
+
+    footer h2{
+        font-size: 2em;
+    }
+
+    .caixa-lista li{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    
+    .lista-footer{
+        list-style: none;
+        text-align: center;
+    }
+    
+    .lista-footer li{
+        margin-right: 0.5em;
+    }
+
+    .lista-footer li:last-child{
+        margin-right: 2.5em;
+    }
+
+    .imagem-lista{
+        height: 4em;
+        width: 4em;
+    }
+
+    /*CSS responsivo da página da linha evolutiva*/
+    .container-imagens, .container-evolucao-especial{
+        width: auto;
+        margin: 0;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .evolucao-imagem{
+        margin: 2px;
+        padding: 10px;
+        width: 7em;
+        height: 7em;
+    }
+
+    .caixa-evolucao{
+        text-align: center;
+    }
+
+    .flecha-imagem{
+        width: 4em;
+        height: 4em;
+        margin: 5px;
+        transform: rotate(90deg);
+        align-items: center;
+        padding: 10px;
+    }
+
+    .caixa-evolucao-especial{
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /*CSS responsivo da página de Pokémon TCG*/
+    ol li{
+        font-size: 16px;
+    }
+
+    .caixa-carta{
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
+
+    .carta-conteudo{
+        width: 15em;
+        height: 15em;
+        margin: 8px;
+    }
+
+    /*CSS responsivo da página de Descrições*/
+    .caixa-tabela{
+        margin: 3px auto;
+        width: 24em;
+    }
+
+    .geracao, .entrada_pokedex{
+        padding: 2px;
+    }
+
+    table tr th{
+        font-size: 16px;
+    }
+    
+    table tbody td:nth-child(2){
+        font-size: 13px;
+    }
+
+    /*CSS responsivo da página de Inscrição*/
+        .container{
+            margin: 3px 2px; 
+            flex-wrap: wrap;   
+        }
+
+        form label, form input{
+            margin: 3px 10px;
+        }
+        
+        .input-dadospessoais{
+            width: 13em;
+        }
+
+        form legend{
+            font-size: 18px;
+        }
+
+        .caixa-fieldset{
+            width: 50%;
+            margin: 10px 2px;
+        }
+
+        #areatxt, #motivocontato, .mensagem_txtarea, .caixa-fieldset p{
+            width: 13em;
+            margin: 5px 10px;
+        }
+
+        .caixa-img-fieldset{
+           width: 50%;
+           align-items: center;
+           margin: auto;
+        }
+
+        #notificacao,.rotulo-notificacao{
+            display: inline;
+        }
+        
+        .rotulo-notificacao{
+            font-size: 13px;
+        }
+
+        .imagem-formulario{
+            margin: 0;
+            height: 11em;
+            width: 11em;
+        }
+
+        .caixa-botoes{
+            margin: 0 4.5em;
+        }
+}
