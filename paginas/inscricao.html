@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="../js/site.js"></script>
-    <script src="../js/mascara.js"></script>
+    <script src="../js/mask.js"></script>
 </head>
 <body onload="desativaBotaoEnvio()">
     <header class="cabecalho">
@@ -32,10 +32,10 @@
                     <input type="email" name="txtemail" id="txtemail" placeholder="Seuemail@dominio.com" class="input-dadospessoais">
                     <!--Telefone-->
                     <label for="txtfone">Telefone</label>
-                    <input type="tel" name="txtfone" id="txtfone" placeholder="(xx) xxxxx-xxxx" class="input-dadospessoais">
+                    <input type="tel" name="txtfone" id="txtfone" placeholder="(xx) xxxxx-xxxx" class="input-dadospessoais" onkeyup="return aplicaMascaraTelefone()">
                     <!--CPF-->
                     <label for="txtcpf">CPF</label>
-                    <input type="text" name="txtcpf" id="txtcpf" placeholder="000.000.000-000" class="input-dadospessoais" maxlength="14" onkeypress="return aplicaMascaraCpf(value)">
+                    <input type="text" name="txtcpf" id="txtcpf" placeholder="000.000.000-000" class="input-dadospessoais" maxlength="14" onkeyup="return aplicaMascaraCpf()">
                     <!--Nascimento-->
                     <label for="txtnasc">Nascimento (clique no calendário)</label>
                     <input type="date" name="txtnasc" id="txtnasc" class="input-dadospessoais">
