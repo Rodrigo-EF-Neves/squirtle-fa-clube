@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="description" content="Fã-clube número #1 do pokémon Squirtle">
+    <meta name="author" content="Rodrigo Emílio Ferreira Neves">
+    <meta name="keywords" content="Squirtle, Pokémon, Fã-clube">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="shortcut icon" href="../imgs/squirtle_icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../js/site.js"></script>
+</head>
+<body onload="desativaBotaoEnvio()">
+    <header class="cabecalho">
+    </header>
+
+    <main>
+        <form action="#" method="POST" name="formdecontato" onsubmit="return validaFormulario()">
+            <h2 class="titulo-principal">Formulário de inscrição</h2>
+            <p>Preencha todos os campos e venha fazer parte do fã-clube do melhor inicial</p>
+            <fieldset class="container">
+                <legend>Dados Pessoais</legend>
+                <div class="caixa-fieldset">
+                    <!--Nome completo-->
+                    <label for="txtnome">Nome completo</label>
+                    <input type="text" name="txtnome" id="txtnome" placeholder="Seu nome completo" class="input-dadospessoais">
+                    <!--E-mail-->
+                    <label for="txtemail">E-mail</label>
+                    <input type="email" name="txtemail" id="txtemail" placeholder="Seuemail@dominio.com" class="input-dadospessoais">
+                    <!--Telefone-->
+                    <label for="txtfone">Telefone</label>
+                    <input type="tel" name="txtfone" id="txtfone" placeholder="(xx) xxxxx-xxxx" class="input-dadospessoais">
+                    <!--CPF-->
+                    <label for="txtcpf">CPF</label>
+                    <input type="text" name="txtcpf" id="txtcpf" placeholder="000.000.000-000" class="input-dadospessoais" maxlength="14" onkeypress="return aplicaMascaraCpf(value)">
+                    <!--Nascimento-->
+                    <label for="txtnasc">Nascimento (clique no calendário)</label>
+                    <input type="date" name="txtnasc" id="txtnasc" class="input-dadospessoais">
+                    <!--Gênero-->
+                    <p id="destaque-radio">Gênero</p>
+                    <input type="radio" name="opcaoradio" id="opcradm" class="labelinput"><label for="opcradm" class="labelradio">Masculino</label>
+                    <input type="radio" name="opcaoradio" id="opcradf" class="labelinput"><label for="opcradf" class="labelradio">Feminino</label>
+                    <input type="radio" name="opcaoradio" id="opcrado" class="labelinput"><label for="opcrado" class="labelradio">Outro</label>
+                </div>
+
+                <div class="caixa-img-fieldset">
+                    <img class="imagem-formulario" src="../imgs/squirtle_comendo.jpg" alt="Duas tartarugas azuis cartunescas de óculos escuros arredondados. A da esquerda está comendo um sanduíche e a da direita está tomando um suco de laranja e comendo um bolinho de arroz">
+                    <p>Dois Squirtles, de óculos escuros redondos, fazendo um lanche.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Motivo da inscrição</legend>
+                <label id="labeldescoberta" for="descoberta">Como descobriu o fã-clube?</label>
+                <select name="selmotivo" id="descoberta">
+                    <option value=" ">Escolha</option>
+                    <option value="NA">Navegando na internet</option>
+                    <option value="RE">Recomendação</option>
+                    <option value="FO">Fóruns</option>
+                    <option value="AM">Amigos</option>
+                </select>
+                <p class="mensagem_txtarea">Mensagem</p>
+                <textarea name="areatxt" id="areatxt" cols="37" rows="8" placeholder="Deixe aqui o motivo de querer fazer parte do fã-clube"></textarea>
+            </fieldset>
+
+            <div>
+                <input type="checkbox" name="checkparticipacao" id="participacao" value="participacao" onclick="verificaMarcacao()"><label class="rotulo-participacao" for="participacao">Quero participar do fã-clube!</label>
+            </div>
+
+            <div class="caixa-botoes">
+                <button name="botaoenviar" id="enviar" type="submit">Enviar</button> <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+    <aside>
+        <nav>
+        </nav>
+    </aside>
+
+    <footer>
+    </footer>
+</body>
+</html>
